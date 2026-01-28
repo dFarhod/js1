@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktiv Fotogalereya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interaktiv Fotogalereya</h1>
+        <p class="instructions">Har bir rasm ustiga olib boring va natijani ko'ring!</p>
+        
+        <div class="gallery">
+            <div class="image-item">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" 
+                     alt="Tabiat manzarasi" 
+                     class="gallery-img"
+                     data-preview="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+                <p class="img-title">Tabiat manzarasi</p>
+            </div>
+            
+            <div class="image-item">
+                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" 
+                     alt="Tog'li landshaft" 
+                     class="gallery-img"
+                     data-preview="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+                <p class="img-title">Tog'li landshaft</p>
+            </div>
+            
+            <div class="image-item">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" 
+                     alt="Ko'l manzarasi" 
+                     class="gallery-img"
+                     data-preview="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+                <p class="img-title">Ko'l manzarasi</p>
+            </div>
+            
+            <div class="image-item">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05" 
+                     alt="O'rmon" 
+                     class="gallery-img"
+                     data-preview="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05">
+                <p class="img-title">O'rmon</p>
+            </div>
+        </div>
+        
+        <div class="preview-section">
+            <h2>Rasm Ko'rish</h2>
+            <div id="image" class="preview-box">
+                <p id="image-text">Bu yerda ko'rsatish uchun quyidagi rasm ustiga olib boring</p>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button onclick="resetGallery()">Galereyani qayta tiklash</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
